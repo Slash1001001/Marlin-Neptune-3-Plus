@@ -93,8 +93,8 @@
 #ifndef MOTHERBOARD
   #define MOTHERBOARD BOARD_MKS_E3D_V2
   #if ENABLED(RTS_AVAILABLE)
-    #define NEPTUNE_3_PRO      1
-    //#define NEPTUNE_3_PLUS   1
+    //#define NEPTUNE_3_PRO      1
+    #define NEPTUNE_3_PLUS   1
     //#define NEPTUNE_3_MAX    1
     #endif
 #endif
@@ -676,9 +676,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp   22.2
-    #define DEFAULT_Ki   1.80
-    #define DEFAULT_Kd  119.00
+    #define DEFAULT_Kp  20.63 //JT
+    #define DEFAULT_Ki   1.5 //JT
+    #define DEFAULT_Kd 70.98 //JT
   #endif
 #endif
 
@@ -1180,7 +1180,7 @@
 #if NEPTUNE_3_PRO
   #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 380.00}
 #elif NEPTUNE_3_PLUS
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 390.00}
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 422.49} //JT
 #elif NEPTUNE_3_MAX
   #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.20, 80.20, 400.00, 390.00}
 #endif
