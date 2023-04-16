@@ -1180,7 +1180,7 @@
 #if NEPTUNE_3_PRO
   #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 380.00}
 #elif NEPTUNE_3_PLUS
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 422.49} //JT
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 409.31} //JT
 #elif NEPTUNE_3_MAX
   #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.20, 80.20, 400.00, 390.00}
 #endif
@@ -1206,14 +1206,14 @@
 #if NEPTUNE_3_PRO
   #define DEFAULT_MAX_ACCELERATION      { 1100, 900, 100, 2000 }
 #elif NEPTUNE_3_PLUS
-  #define DEFAULT_MAX_ACCELERATION      { 700, 700, 100, 2000 }
+  #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 2000 } // JT
 #elif NEPTUNE_3_MAX
   #define DEFAULT_MAX_ACCELERATION      { 700, 700, 100, 2000 }
 #endif
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
-  #define MAX_ACCEL_EDIT_VALUES       { 6000, 6000, 200, 20000 } // ...or, set your own edit limits
+  #define MAX_ACCEL_EDIT_VALUES       { 10000, 10000, 200, 20000 } // ...or, set your own edit limits
 #endif
 
 /**
@@ -1238,8 +1238,8 @@
  */
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK 8.0
-  #define DEFAULT_YJERK 8.0
+  #define DEFAULT_XJERK 10.0 // JT
+  #define DEFAULT_YJERK 10.0 // JT
   #define DEFAULT_ZJERK  0.4
   //#define DEFAULT_IJERK  0.3
   //#define DEFAULT_JJERK  0.3
