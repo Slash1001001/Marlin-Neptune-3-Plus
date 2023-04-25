@@ -676,9 +676,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  20.63 //JT
-    #define DEFAULT_Ki   1.5 //JT
-    #define DEFAULT_Kd 70.98 //JT
+    #define DEFAULT_Kp  26.08 //JT
+    #define DEFAULT_Ki   1.84 //JT
+    #define DEFAULT_Kd 92.31 //JT
   #endif
 #endif
 
@@ -833,7 +833,7 @@
  * *** IT IS HIGHLY RECOMMENDED TO LEAVE THIS OPTION ENABLED! ***
  */
 #define PREVENT_COLD_EXTRUSION
-#define EXTRUDE_MINTEMP 170
+#define EXTRUDE_MINTEMP 160 //JT
 
 /**
  * Prevent a single extrusion longer than EXTRUDE_MAXLENGTH.
@@ -1180,7 +1180,7 @@
 #if NEPTUNE_3_PRO
   #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 380.00}
 #elif NEPTUNE_3_PLUS
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 409.31} //JT
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.00, 80.00, 400.00, 406.95} //JT
 #elif NEPTUNE_3_MAX
   #define DEFAULT_AXIS_STEPS_PER_UNIT   {80.20, 80.20, 400.00, 390.00}
 #endif
@@ -1206,7 +1206,7 @@
 #if NEPTUNE_3_PRO
   #define DEFAULT_MAX_ACCELERATION      { 1100, 900, 100, 2000 }
 #elif NEPTUNE_3_PLUS
-  #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 2000 } // JT
+  #define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 3000 } // JT
 #elif NEPTUNE_3_MAX
   #define DEFAULT_MAX_ACCELERATION      { 700, 700, 100, 2000 }
 #endif
