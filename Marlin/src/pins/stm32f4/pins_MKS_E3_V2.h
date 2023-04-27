@@ -73,6 +73,11 @@
 #define LED3_PIN                            PB9    //顶灯
 
 //
+// BEEPER
+//
+#define BEEPER_PIN                          PC15   //蜂鸣器
+
+//
 // Auto fans
 //
 #define AUTO_FAN_PIN                        PB0    //FAN2
@@ -100,6 +105,11 @@
   #define MARLIN_EEPROM_SIZE              0x1000  // 4KB
   #define I2C_SCL_PIN                       PB6
   #define I2C_SDA_PIN                       PB7
+#endif
+
+// Оn the servos connector
+#ifndef FIL_RUNOUT_PIN
+  #define FIL_RUNOUT_PIN                       CHECKFILEMENT0_PIN
 #endif
 
 //
